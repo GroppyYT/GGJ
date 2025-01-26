@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cxvd2cg6vpd2q"
+path="res://.godot/imported/Bubble Cub Theme.ogg-8b05d22d2900ede5e5dec3fba71a00fa.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sound/Bubble Cub Theme.ogg"
+dest_files=["res://.godot/imported/Bubble Cub Theme.ogg-8b05d22d2900ede5e5dec3fba71a00fa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

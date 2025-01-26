@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://ds1gj4cooxcxs"]
+[gd_scene load_steps=36 format=3 uid="uid://ds1gj4cooxcxs"]
 
 [ext_resource type="PackedScene" uid="uid://ppnjr1p4ufci" path="res://Scenes/player.tscn" id="1_4jjgs"]
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_jwpdl"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://ddh8mh0y564lw" path="res://assets/Free-Undead-Tileset-Top-Down-Pixel-Art/Tiled_files/details.png" id="8_eagwb"]
 [ext_resource type="Texture2D" uid="uid://c16s2fw1oshlq" path="res://assets/Free-Undead-Tileset-Top-Down-Pixel-Art/Tiled_files/Objects.png" id="9_p17fb"]
 [ext_resource type="PackedScene" uid="uid://iavn75fadt5w" path="res://Scenes/red_hood_Enemy.tscn" id="11_06r8m"]
+[ext_resource type="AudioStream" uid="uid://dfxct5r3m8lie" path="res://assets/Sound/SFX/SFX_Jump_17.wav" id="13_4cg7w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j54by"]
 texture = ExtResource("2_fbd3l")
@@ -7289,6 +7290,11 @@ position = Vector2(-2010, -170)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(11, 9)
 zoom = Vector2(4, 4)
+
+[node name="AudioStreamPlayerJump" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource("13_4cg7w")
+autoplay = true
+bus = &"SFX"
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1, 0)

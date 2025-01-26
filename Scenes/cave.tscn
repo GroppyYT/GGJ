@@ -1,7 +1,9 @@
-[gd_scene load_steps=18 format=3 uid="uid://bvrbuj0tmja30"]
+[gd_scene load_steps=20 format=3 uid="uid://bvrbuj0tmja30"]
 
 [ext_resource type="PackedScene" uid="uid://ppnjr1p4ufci" path="res://Scenes/player.tscn" id="1_su053"]
+[ext_resource type="AudioStream" uid="uid://dfxct5r3m8lie" path="res://assets/Sound/SFX/SFX_Jump_17.wav" id="2_iouf5"]
 [ext_resource type="Texture2D" uid="uid://bxfej7blmtmpn" path="res://assets/ReverieGrasslandAssets/ReverieGrassland/tileset.png" id="2_ovvns"]
+[ext_resource type="AudioStream" uid="uid://b70v4x23vgmj7" path="res://assets/Sound/Bubble_collecting_sound.mp3" id="3_cwwa5"]
 [ext_resource type="Texture2D" uid="uid://c2l83r31o0dkj" path="res://assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 1/1.png" id="3_nr850"]
 [ext_resource type="Texture2D" uid="uid://cvqn6q2kybstd" path="res://assets/pixel caves/mainlev_build.png" id="4_mqryq"]
 [ext_resource type="Texture2D" uid="uid://3r83dj63g02g" path="res://assets/pixel caves/props1.png" id="5_anbiq"]
@@ -2742,6 +2744,14 @@ rotation = -0.0209253
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(11, 9)
 zoom = Vector2(4, 4)
+
+[node name="AudioStreamPlayerJump" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource("2_iouf5")
+autoplay = true
+bus = &"SFX"
+
+[node name="AudioStreamPlayerLeftAtk" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource("3_cwwa5")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4bujv")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bb4frhyd8824q"]
+[gd_scene load_steps=10 format=3 uid="uid://bb4frhyd8824q"]
 
 [ext_resource type="Texture2D" uid="uid://ldquxkn8371j" path="res://assets/UI/background/4.png" id="1_rmfk3"]
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_tn7f3"]
 [ext_resource type="FontFile" uid="uid://dp7sgvkholuk8" path="res://assets/UI/blow.ttf" id="2_0ksdh"]
+[ext_resource type="AudioStream" uid="uid://ce4p64r3tctxb" path="res://assets/Sound/MainMenuMusic.mp3" id="4_wwyai"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3oa8"]
 bg_color = Color(0.317404, 0.643792, 0.796512, 1)
@@ -119,6 +120,10 @@ theme_override_font_sizes/font_size = 63
 text = "Duck Something"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayer_mmm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_wwyai")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_3_pressed"]
