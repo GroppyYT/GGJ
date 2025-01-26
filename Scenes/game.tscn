@@ -7284,7 +7284,7 @@ size = Vector2(244, 20)
 script = ExtResource("1_jwpdl")
 
 [node name="Player" parent="." instance=ExtResource("1_4jjgs")]
-position = Vector2(5767, 367)
+position = Vector2(-2010, -170)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(11, 9)
