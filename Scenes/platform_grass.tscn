@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://wnvxtu4guwd7"]
+
+[ext_resource type="Texture2D" uid="uid://bxfej7blmtmpn" path="res://assets/ReverieGrasslandAssets/ReverieGrassland/tileset.png" id="1_xy7gr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_00wix"]
+size = Vector2(48, 12)
+
+[node name="PlatformGrass" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xy7gr")
+region_enabled = true
+region_rect = Rect2(15.8092, 79.9454, 48.3767, 14.7292)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_00wix")
+one_way_collision = true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cgkth5n5stjfl"
+valid=false
+
+[deps]
+
+source_file="res://assets/UI/Font/minimalpixel.fnt"
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

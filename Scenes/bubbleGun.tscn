@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ihndfriaxfv"]
+
+[ext_resource type="Script" path="res://Scripts/bubble_gun.gd" id="1_esv8a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vrgro"]
+size = Vector2(2, 2)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_esv8a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vrgro")
+
+[node name="Node2D" type="Node2D" parent="."]
